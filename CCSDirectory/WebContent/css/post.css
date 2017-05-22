@@ -1,0 +1,62 @@
+.aside-left{
+	
+}
+
+.container{
+	background-color: #F1EFF0;
+	border-radius: 8px;
+	padding: 8px;
+	border-bottom: 0;
+}
+
+.aside-left ul a{
+	text-decoration: none;
+}
+
+.aside-left ul a:hover{
+	text-decoration: underline;
+}
+
+section article{
+	padding: 8px;
+	border-radius: 5px;
+	
+}
+
+section:not(.news){
+	margin: 0 5px;
+}
+
+section article h3{
+	text-align: center;
+	color: darkblue;
+	margin: 3px 5px 5px 5px;
+	padding: 14px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 6px 1px #777;
+	font-family: "Sans-Serif";
+	font-size: 1.7em;
+}
+
+section article .article-info{
+	background-color: #f5f5f5;
+	line-height: 1.8em;
+	padding: 5px;
+}
+
+section article p{
+	padding: 5px;
+	font-family: "Comic Sans MS";
+	font-size: 1.4em;
+}
+
+section article .article-info .date{
+	font-family: "verdana";
+	color: #333;
+	font-size: 1.2em;
+}
+
+section article .article-info .posted-by{
+	color: #777;
+	
+}

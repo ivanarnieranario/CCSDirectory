@@ -1,0 +1,113 @@
+
+.feature-image{
+	max-width: 70%;
+	position: relative;
+	margin: 0 auto 20px auto;
+	box-shadow: 3px 3px 16px 4px black;
+}
+
+.feature-image img{
+	height: 500px;
+	box-shadow: inset 2px 2px 4px #f5f5f5;
+}
+
+
+.prev , .next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	color: white;
+	background-color: #333;
+	box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.4);
+}
+
+.prev:hover , .next:hover{
+	box-shadow: 2px 2px 6px black;
+}
+
+
+.prev{
+	left: -10px;
+	border-radius: 8px 0px 0px 8px;
+}
+
+.next{
+	right: -10px;
+	border-radius: 0px 8px 8px 0px;
+}
+
+
+
+.number-text{
+	position: absolute;
+	color: #f5f5f5;
+	padding: 12px;
+	font-size: 1.5em;
+	bottom: 0;
+	font-family: "Courier New";
+	font-weight: bold;
+	background-color: #333;
+	border-radius: 0px 5px 0px 0px;
+	border: 1px inset #f5f5f5;
+}
+
+.caption{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 1.5em;
+	font-family: consolas;
+	color: white;
+	padding: 12px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.3);
+}
+
+
+
+.dot{
+	display: inline-block;
+	cursor: pointer;
+	height: 18px;
+	width: 18px;
+	background-color: #999;
+	border-radius: 50px;
+	transition: background-color 0.6 ease;
+	margin: 0 2px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.8s;
+  animation-name: fade;
+  animation-duration: 1.8s;
+}
+
+@-webkit-keyframes fade{
+	from {opacity: 0.4}
+	to {opacity: 1}
+}
+
+@keyframes fade{
+	from {opacity: 0.4}
+	to {opacity: 1}
+}
+
+.active, .dot:hover{
+	background-color: #333;
+}
+
+
+.slides{
+	display: none;
+}
+
+.caption a{
+	padding: 12px;
+	background-color: green;
+	float: right;
+	border-radius: 5px;
+}
+

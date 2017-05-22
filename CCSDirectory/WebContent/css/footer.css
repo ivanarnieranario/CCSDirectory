@@ -1,0 +1,40 @@
+
+footer{
+	width: 100%;
+	height: auto;
+	background-color: #201E1C; 
+	color: #7B7A7A;
+	font-family: "Sans-serif";
+	padding: 2em;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+footer .info{
+	margin-top: 1.3em;
+}
+
+footer .info span{
+	color: white;
+	font-style: italic;
+}
+
+
+.row{
+	border-bottom: 1px solid #555555;
+	padding: 5px;
+}
+
+.col-4{
+	margin-bottom: 5px;
+}
+
+a{
+	color: #c0c0c0;
+	text-decoration: none;
+}
+
+
+.about span{
+	color: #ddd;
+}

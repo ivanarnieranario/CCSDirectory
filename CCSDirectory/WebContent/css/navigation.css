@@ -1,0 +1,155 @@
+div.top{
+	position: fixed;
+	width: 100%;
+	background-color: #0D508D;
+	z-index: 1;
+	border-bottom: 1px solid white;
+	top:0;
+}
+
+.nav-container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.ccs-logo{
+	width: 72px;
+	height: 72px;
+	float: right;
+	box-shadow: 5px 2px 4px 0px rgba(0,0,0,0.2);
+	border-radius: 0px 0px 5px 5px;
+}
+
+@media screen and (max-width: 620px){
+	.nav-container{
+	  width: 100%;
+	}
+	.ccs-logo{
+	  position: absolute;
+	  top:0;
+	  right: 0.50em;
+	}
+}
+
+
+ul#topnav#topnav{
+	padding: 0;
+	margin: 0 auto;
+	list-style-type: none;
+	background-color: #333;
+	font-family: "Lucida Sans",Consolas,"Courier New";
+}
+
+ul#topnav > li {
+	float: left;
+}
+
+ul#topnav li > a, .dropdown-button{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 12px 14px;
+	cursor: pointer;
+	font-size: 0.85em;
+}
+
+ul#topnav li a.active{
+	background-color: white;
+	color: #333;
+	border-radius: 0px 0px 3px 3px;
+}
+
+ul#topnav li > a:hover:not(.active), ul#topnav li span.dropdown-button:hover{
+	color: skyblue;
+	text-decoration: underline;
+}
+
+ul#topnav li.nav-icon a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+/* for mobile phones */
+ul#topnav li.nav-icon{
+	font-size: 0.95em;
+	display: none;
+}
+
+ul#topnav li.dashboard{
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+   ul#topnav li:not(:first-child){ display: none; }
+   ul#topnav li.nav-icon{ 
+     display: block; 
+     float: right;
+   }
+   
+   ul#topnav li a.active{
+     border-radius: 0px;
+   }
+}
+
+@media screen and (max-width: 600px){
+	ul#topnav.responsive {position: relative;}
+	ul#topnav.responsive li.nav-icon{
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	}
+	
+	ul#topnav.responsive > li {
+	  display: block;
+	  float: none;
+	  text-align: left;
+	}
+	
+	ul#topnav.responsive > li a.active{
+	  background-color: #0D508D;
+	  color: white;
+	}
+	
+	ul#topnav li.dashboard{
+	  display: block;
+	  text-align: left;
+	}
+	.ccs-logo{display: none;}
+	
+}
+
+
+/* Dropdown for CCS Department */
+.dropdown-content{
+	position: absolute;
+	background-color: #2198E9;
+	border-radius: 0px 0px 2px 2px;
+	z-index: 2;
+    box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.2);
+    font-family: "Courier New";
+	display: none;
+}
+.dropdown-content a{
+	display: block;
+	padding: 8px 12px;
+	text-decoration: none;
+	color: white;
+}
+
+.dropdown-content a:hover{
+	background-color: #fff;
+	color: blue;
+}
+
+ul#topnav li.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+
+@media screen and (max-width: 600px){
+	.dropdown-content{
+	   position: static;
+	   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+	   display: block;
+	}
+}
